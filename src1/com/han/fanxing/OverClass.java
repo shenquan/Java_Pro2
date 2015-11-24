@@ -19,8 +19,8 @@ public class OverClass<T1> {
     }
 
     public static void main(String[] args) {
-        OverClass<Boolean> over1 = new OverClass<Boolean>();
-        OverClass<Float> over2 = new OverClass<Float>();
+        OverClass<Boolean> over1 = new OverClass<>();
+        OverClass<Float> over2 = new OverClass<>();
         over1.setOver(true);
         Boolean b=over1.getOver();
         out.println(b);
@@ -28,6 +28,9 @@ public class OverClass<T1> {
         Float f=over2.getOver();
         out.println(f);
 
+        OverClass<Float> over3 = new OverClass<>();
+        over2.setOver(24.3f);
+        Float i = over2.getOver();
     }
 
 }
